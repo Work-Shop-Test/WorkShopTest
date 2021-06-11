@@ -17,7 +17,7 @@ const FormFormik = () => {
             email: Yup.string().email('Invalid email address').required('Required'),
             password: Yup.string().min(10, 'Contraseña min 8 caracteres').required('Required'),
             option: Yup.string().oneOf(['value1', 'value2', 'value3'], 'Elige una opcion').required('Required'),
-            checkbox: Yup.boolean().oneOf([true], 'acepta los terminos y condiciones')
+            checkbox: Yup.boolean().oneOf([true], 'acepta los terminos y condiciones').required('Required')
           }),
         onSubmit: values => {
             // dispatch(startRegisterWithEmailPasswordName(values.email, values.password, values.name))
