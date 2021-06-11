@@ -23,7 +23,7 @@ export const HeroCard = ({
 
                         {
                             ( alter_ego !== characters ) 
-                                && <p className="card-text"> { characters } </p>
+                                && <p className="card-text-characters"> { characters } </p>
                         }
 
                         <p className="card-text">
